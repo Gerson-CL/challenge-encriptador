@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Challenge Logica de Programacion Oracle + Alura LATAM</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.aluracursos.com/">
+                <img src="./src/logo.svg" alt="logo">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <textarea type="text" class="initial_text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="details-buttons">
+                <div class="info">
+                    <img src="./src/info.svg" alt="">
+                    <span class="details">Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="btnEncrypt" class="btn-1">Encriptar</button>
+                    <button type="button" id="btnUncrypt" class="btn-2">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-2">
+            <div class="text-uncrypt" id="textUncrypt">
+                <img src="./src/muneco.svg" id="imagenMuneco">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+            </div>
+            <div class="div-text-uncrypt show-content">
+                <textarea type="text" class="end_text" cols="30"
+                rows="10"></textarea>
+
+              <button class="btn-3"  onclick="copyText()">Copy</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
